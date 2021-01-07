@@ -23,7 +23,7 @@ if (reverseString(userWord) === userWord) {
 var oddOrEven = prompt ('pari o dispari?');
 console.log('la scelta dell\'utente è stata ' + oddOrEven);
 var userNum = parseInt(prompt('scegli un numero da 1 a 5'));
-console.log('il numnero scelto dall\'utente è stato' + userNum;
+console.log('il numnero scelto dall\'utente è stato' + userNum);
 
 
 // creo funzione per generare un numero random
@@ -38,3 +38,11 @@ console.log('il numero del computer è ' + computerNum);
 
 var total = userNum + computerNum
 console.log(total);
+
+if (total % 2 == 0 && oddOrEven === 'pari') {
+  alert('il numero uscito è ' + total + ' hai vinto');
+} else if (total % 2 !== 0 && oddOrEven === 'dispari') {
+  alert('il numero uscito è ' + total + ' hai vinto');
+} else {
+  alert('il numero uscito è ' + total + ' hai perso')
+}
